@@ -8,8 +8,12 @@ namespace Item.Domain.Seed
 {
     public class BaseAuditModel
     {
-        public Guid Id { get; protected set; }
-        public DateTime Createddate { get; protected set; }
+
+        public Guid Id { get; set; }
+        public DateTime Createddate { get;  set; }
+
+        public Guid? LastModifiedBy { get; set; }
+        public DateTime? LastModifiedDate { get; set; }
 
     }
 }

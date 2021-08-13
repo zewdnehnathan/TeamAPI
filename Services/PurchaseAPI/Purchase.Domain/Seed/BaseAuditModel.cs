@@ -4,14 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Item.Domain.Seed
+namespace Purchase.Domain.Seed
 {
-    public abstract class BaseEntity<T> where T : BaseAuditModel
+    public class BaseAuditModel
     {
         public Guid Id { get; protected set; }
         public DateTime Createddate { get; protected set; }
-
-        public abstract T MapToModel();
-        public abstract T MapToModel(T t);
     }
 }

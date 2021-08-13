@@ -18,10 +18,12 @@ namespace Item.Domain.Model
         {
 
         }
-
-        public void Add(string name)
+        public Item(string Name,string category,decimal Qty,decimal UnitPrice)
         {
-            Name = name;
+            this.Name = Name;
+            this.Category = category;
+            this.Qty = Qty;
+            this.UnitPrice = UnitPrice;
         }
 
 
